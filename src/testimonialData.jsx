@@ -1,7 +1,7 @@
-import avatarAli from "/src/assets/images/avatar-ali.png";
-import avatarAnisha from "/src/assets/images/avatar-anisha.png";
-import avatarRichard from "/src/assets/images/avatar-richard.png";
-import avatarShanai from "/src/assets/images/avatar-shanai.png";
+import avatarAli from "/src/images/avatar-ali.png";
+import avatarAnisha from "/src/images/avatar-anisha.png";
+import avatarRichard from "/src/images/avatar-richard.png";
+import avatarShanai from "/src/images/avatar-shanai.png";
 
 const testimonialData = [
   {

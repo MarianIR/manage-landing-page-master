@@ -1,8 +1,8 @@
 import { useState } from "react";
 import React from "react";
-import logo from "/src/assets/images/logo.svg";
-import openMenu from "/src/assets/images/icon-hamburger.svg";
-import closeMenu from "/src/assets/images/icon-close.svg";
+import logo from "/src/images/logo.svg";
+import openMenu from "/src/images/icon-hamburger.svg";
+import closeMenu from "/src/images/icon-close.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

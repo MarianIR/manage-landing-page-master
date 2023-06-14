@@ -1,11 +1,11 @@
 import React from "react";
 
-import logo from "/src/assets/images/logo.svg";
-import facebookIcon from "/src/assets/images/icon-facebook.svg";
-import youtubeIcon from "/src/assets/images/icon-youtube.svg";
-import twitterIcon from "/src/assets/images/icon-twitter.svg";
-import pinterestIcon from "/src/assets/images/icon-pinterest.svg";
-import instagramIcon from "/src/assets/images/icon-instagram.svg";
+import logo from "/src/images/logo.svg";
+import facebookIcon from "/src/images/icon-facebook.svg";
+import youtubeIcon from "/src/images/icon-youtube.svg";
+import twitterIcon from "/src/images/icon-twitter.svg";
+import pinterestIcon from "/src/images/icon-pinterest.svg";
+import instagramIcon from "/src/images/icon-instagram.svg";
 const Footer = () => {
   return (
     <section className="footer-section">

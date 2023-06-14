@@ -1,4 +1,4 @@
-import illustrationIntro from "/src/assets/images/illustration-intro.svg";
+import illustrationIntro from "/src/images/illustration-intro.svg";
 const Hero = () => {
   return (
     <>
