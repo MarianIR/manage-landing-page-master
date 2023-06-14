@@ -1,0 +1,28 @@
+@mixin GetStartedBtn {
+  display: block;
+  border: none;
+  background-color: $primaryColor1;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  color: $neutralColor4;
+  font-size: 1.2rem;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+@mixin Paragraph {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  line-height: 2.5rem;
+  color: $neutralColor1;
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
