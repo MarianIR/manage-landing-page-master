@@ -1,0 +1,36 @@
+@import "mixins";
+.simplify-section {
+  width: 100%;
+  background-color: $primaryColor1;
+  padding: 2rem 0;
+  background-image: url("/src/assets/images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  @media (min-width: 768px) {
+    background-image: url("/src/assets/images/bg-simplify-section-desktop.svg");
+    background-position: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 20rem;
+  }
+  .simplify-heading {
+    color: $neutralColor4;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+    @media (min-width: 768px) {
+      max-width: 50rem;
+      text-align: left;
+    }
+  }
+  .get-started-btn {
+    @include GetStartedBtn;
+    background-color: $neutralColor4;
+    color: $primaryColor1;
+    margin: 2rem auto 1rem auto;
+    @media (min-width: 768px) {
+      margin: 2rem 0 1rem 0;
+    }
+  }
+}

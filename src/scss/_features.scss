@@ -1,0 +1,107 @@
+@import "mixins";
+
+.feature-section {
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 50rem;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  @media (min-width: 1620px) {
+    padding: 2rem 30rem;
+  }
+  .features-info {
+    @media (min-width: 768px) {
+      text-align: left;
+      padding-left: 2rem;
+      padding: 2rem 0 2rem;
+      max-width: 50rem;
+    }
+    .features-heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $neutralColor2;
+      letter-spacing: 0.1rem;
+      @media (min-width: 768px) {
+        font-size: 3.5rem;
+      }
+    }
+    .paragraph {
+      @include Paragraph;
+      @media (min-width: 768px) {
+      }
+    }
+  }
+  .app-features {
+    @media (min-width: 768px) {
+      max-width: 70rem;
+    }
+    .feature {
+      padding: 2rem 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin: 1rem 0 1rem auto;
+      width: 97%;
+      border-radius: 5rem 0 0 5rem;
+      @media (min-width: 768px) {
+        background-color: transparent;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      .feature-number {
+        z-index: 1 !important;
+        background-color: $primaryColor1;
+        color: $neutralColor4;
+        font-weight: bold;
+        padding: 1rem 2.5rem;
+        text-align: center;
+        border-radius: 5rem;
+        // font-size: 1.6rem;
+        font-size: clamp(1rem, 2vw, 2rem);
+        @media (min-width: 768px) {
+          padding: 0.5rem 2rem;
+        }
+      }
+      .feature-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .feature-title {
+          position: absolute;
+          margin: 0 auto 2rem -2rem;
+          color: $neutralColor2;
+          font-size: clamp(1.1rem, 2vw, 1.8rem);
+          font-weight: bold;
+          background-color: hsl(13, 100%, 95%);
+          padding: 1rem 5rem 1rem 3rem;
+          border-radius: 0 0 0 0;
+          @media (min-width: 768px) {
+            background-color: transparent;
+            font-size: 2rem;
+            padding: 0.5rem 5rem 0.5rem 3rem;
+          }
+        }
+        .paragraph {
+          position: relative;
+          color: $neutralColor1;
+          font-size: 1.2rem;
+          line-height: 2rem;
+          text-align: left;
+          margin: 4rem auto 0 -6rem;
+          padding: 3rem 1rem 1rem 0;
+          @media (min-width: 768px) {
+            margin: 4rem 0 0 0;
+            font-size: 2rem;
+            max-width: 60rem;
+          }
+          @media (min-width: 868px) {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

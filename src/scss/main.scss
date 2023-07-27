@@ -1,0 +1,20 @@
+@import "reset", "variables", "navbar", "hero", "features", "testimonials",
+  "simplify", "footer", "mixins";
+
+body {
+  // overflow: hidden;
+  padding: 2rem 0;
+  background-image: url("/src/images/bg-tablet-pattern.svg");
+  background-position: -33% -10%;
+  background-size: 40rem 40rem;
+  background-repeat: no-repeat;
+  @media (min-width: 768px) {
+    background-image: url("/src/images/bg-tablet-pattern.svg");
+    background-position: 134% -31%;
+    background-size: 70rem 70rem;
+    // background-repeat: no-repeat;
+  }
+  // @media (min-width: 1620px) {
+  //   padding: 2rem 30rem;
+  // }
+}
